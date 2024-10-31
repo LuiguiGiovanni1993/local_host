@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DPW1_U3_A1_LUSG</title>
+
+ <style type="text/css" media="screen">
+        .carousel {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+        }
+        #imagen {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+        }
+    </style>
+
+<!-- 
+Evento JavaScript OnLoad()
+El evento de onload ocurre cuando un objeto ha sido cargado, onload se utiliza dentro del elemento body para ejecutar un script una vez una pagina web ha
+cargado completamente todo el contenido (incluyendo imágenes, archivos de script, Archivos CSS, etc.). El evento de carga se puede utilizar para comprobar 
+el tipo y el navegador del visitante, y cargar la versión adecuada de la página web en función de la información. El evento onload también se puede utilizar 
+para tratar con las cookies. -->
+
+
+    <script>
+        window.onload = function () {
+    // Variables
+    const IMAGENES = [
+        'imagenes/unadm_1.jpg',
+        'imagenes/unadm_2.jpg',
+        'imagenes/unadm_3.jpg',
+        'imagenes/unadm_4.jpg',
+        'imagenes/unadm_5.jpg'
+    ];
+
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
+    let posicionActual = 0;
+    let $botonRetroceder = document.querySelector('#retroceder');
+    let $botonAvanzar = document.querySelector('#avanzar');
+    let $imagen = document.querySelector('#imagen');
+    let $botonPlay = document.querySelector('#play');
+    let $botonStop = document.querySelector('#stop');
+    let intervalo;
+
+    // Funciones
+
+    /**
+     * Funcion que cambia la foto en la siguiente posicion
+     */
+    function pasarFoto() {
+        if(posicionActual >= IMAGENES.length - 1) {
+            posicionActual = 0;
+        } else {
+            posicionActual++;
+        }
+        renderizarImagen();
+    }
+
+    /**
+     * Funcion que cambia la foto en la anterior posicion
+     */
+    function retrocederFoto() {
+        if(posicionActual <= 0) {
+            posicionActual = IMAGENES.length - 1;
+        } else {
+            posicionActual--;
+        }
+        renderizarImagen();
+    }
+
+    /**
+     * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
+     */
+    function renderizarImagen () {
+        $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+    }
+
+    /**
+     * Activa el autoplay de la imagen
+     */
+    function playIntervalo() {
+        intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
+        // Desactivamos los botones de control
+        $botonAvanzar.setAttribute('disabled', true);
+        $botonRetroceder.setAttribute('disabled', true);
+        $botonPlay.setAttribute('disabled', true);
+        $botonStop.removeAttribute('disabled');
+
+    }
+
+    /**
+     * Para el autoplay de la imagen
+     */
+    function stopIntervalo() {
+        clearInterval(intervalo);
+        // Activamos los botones de control
+        $botonAvanzar.removeAttribute('disabled');
+        $botonRetroceder.removeAttribute('disabled');
+        $botonPlay.removeAttribute('disabled');
+        $botonStop.setAttribute('disabled', true);
+    }
+
+    // Eventos
+    $botonAvanzar.addEventListener('click', pasarFoto);
+    $botonRetroceder.addEventListener('click', retrocederFoto);
+    $botonPlay.addEventListener('click', playIntervalo);
+    $botonStop.addEventListener('click', stopIntervalo);
+    // Iniciar
+    renderizarImagen();
+}
+        
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+                      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+                      crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="Css_pag_princial_cs.css" rel="stylesheet" type="text/css">
+
+                            
+</head>
+
+<body>
+<div align="center">
+  <table width="1345" border="1" align="center">
+    <tr>
+      <td width="31">&nbsp;</td>
+      <td width="47">&nbsp;</td>
+      <td width="47">&nbsp;</td>
+      <td width="47">&nbsp;</td>
+      <td colspan="8" align="center" valign="middle"><h2>Evidencia de aprendizaje. Construcción del sitio web Parte 1</h2></td>
+      <td width="46">&nbsp;</td>
+      <td width="69">&nbsp;</td>
+      <td width="69">&nbsp;</td>
+      <td width="120">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4">&nbsp;</td>
+      <td width="71">&nbsp;</td>
+      <td width="105">&nbsp;</td>
+      <td width="105">&nbsp;</td>
+      <td width="105">&nbsp;</td>
+      <td width="71">&nbsp;</td>
+      <td width="105">&nbsp;</td>
+      <td width="105">&nbsp;</td>
+      <td width="102">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center" valign="middle"><a href="DPW1_U2_EA_LUSG_Bienvenida.html">Página de Inicio</a></td>
+      <td colspan="4" align="center" valign="middle"><a href="DPW1_U2_EA_LUSG_Formulario_de_inscripcion.html">Formulario de Inscripción</a></td>
+      <td colspan="4" align="center" valign="middle"><a href="DPW1_U2_EA_LUSG_Pagina_de_cursos_L.html">Página de Cursos</a></td>
+      <td colspan="4" align="center" valign="middle"><a href="DPW1_U2_EA_LUSG_Pagina_de_contacto.html">Página de Contacto</a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="4">
+      <form>
+        <input type="search" placeholder="Buscar en mi sitio web">
+        <button type="submit">Buscar</button>
+    </form>
+      &nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="16">
+      
+     <p align = "center"> <img src = "unadm.jpg" width = "311" height = "250" /> </p>
+     
+    <h1 align = "center">Universidad Abierta y a distancia de Mexico</h1>
+      
+      &nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="8">&nbsp;
+      <div class="carousel">
+                    <button id="retroceder">Retroceder</button>
+                    <div id="imagen"></div>
+                    <button id="avanzar">Avanzar</button>
+                </div>
+                
+            <div class="controles">
+                    <button id="play">Play</button>
+
+                    <button id="stop" disabled>Stop</button>
+                </div>
+   
+   <!-- 
+evento JavaScript OnMouseOver()
+El onmouseover ocurre cuando el puntero del mouse ingresa a un elemento, este evento se utiliza junto con el onmouseout que ocurre cuando el puntero
+del mouse abandona el elemento-->
+
+
+<!-- 
+evento JavaScript OnMouseOut()
+El OnMouseOut ocurre cuando el puntero del mouse se mueve fuera de un elemento, este evento se utiliza junto con el OnMouseOver que ocurre cuando el puntero
+se mueve sobre un elemento -->
+
+<!-- 
+El onclick ocurre cuando el usuario hace clic en un elemento HTML -->
+
+   
+             <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" border="0" src="imagenes/unadm_1.jpg" 
+         width="64" height="64">
+            
+         
+  <textarea id="text"></textarea>
+  <input onclick="clearText()" value="Clear" type="button">
+    <script src="javascript_pag_principal.js"></script>
+
+  
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="156" colspan="16">
+      <footer>
+      <p>Derechos de autor © 2024. Luigui Giovanni Salmeron Gonzalez.</p>
+      <p>Contáctanos: <a href="mailto: 422089418@derecho.unam.mx">422089418@derecho.unam.mx</a></p>
+      <ul>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+      </ul>
+    </footer>
+      
+      &nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
