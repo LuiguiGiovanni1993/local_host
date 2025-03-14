@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+H1 {color: black; font-size:24px;}
+H2 {color: black; font-size:18px;}
+
+p3 {color: black; font-size:14px;}
