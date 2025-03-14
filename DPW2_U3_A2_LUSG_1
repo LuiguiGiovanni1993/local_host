@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Css_DPW2_U3_A2_LUSG_1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<title>Actividad 2. Documentación y maquetación de un sitio web.</title>
+</head>
+
+<body>
+<table width="1250" border="1" align="center">
+  <tr>
+    <td colspan="6"
+    >&nbsp;
+    
+    
+    
+ 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Luigui Giovanni Salmeron Gonzalez</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Inicio</a></li>
+      <li><a href="#">Departamentos</a></li>
+      <li><a href="#">Ofertas del dia</a></li>
+      <li><a href="#">Promociones</a></li>
+            <li><a href="#">Facturacion</a></li>
+       <li><a href="#">Sucursales</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Barra de navegacion</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Inicio</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Drowdown
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Departamentos</a></li>
+          <li><a href="#">Ofertas del dia</a></li>
+          
+          <li><a href="#">Promociones</a></li>
+          
+          <li><a href="#"></a>Facturacion</li>
+          
+          <li><a href="#">Sucursales</a></li>
+        
+        </ul>
+      </li>
+      <li><a href="#">Programacion web II</a></li>
+      <li><a href="#">Desarrollo de software</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6">&nbsp;
+  
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="imagenes/Dep_regalos.jpg" alt="Departamento de regalos">
+    </div>
+
+    <div class="item">
+     <img src="imagenes/Dep_arte.jpg" alt="Departamento de arte">
+    </div>
+
+    <div class="item">
+      <img src="imagenes/Dep_muebles.jpg" alt="Departamento de muebles">
+
+      
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+    
+    
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <div class="container">
+        <h2>Metodo modal</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Haz clic para abrir el modal</button>
+        
+        <div align="center">
+          <!-- Modal -->
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Metodo modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>Este es el evento modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+      
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;
+    
+    
+    </td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    
+        <h2>MARCA: Printaform</h2>
+        <p>Paquete de rollos de papel bond modelo 1190 57mmx60mm de la marca Printaform.</p>
+        <div class="card img-fluid" style="width:250px">
+          <img class="card-img-top" src="imagenes/rollo_de_papel.jpg" alt="Card image" style="width:100%">
+          <div class="card-img-overlay">
+            <h4 class="card-title">MARCA: Printaform</h4>
+            <p class="card-text">El paquete contiene 3 rollos
+.Papel de gran calidad que protege a las impresoras y registradoras. Máxima blancura para su correcta impresión. Incluye indicador rojo de terminación de papel.</p>
+            <a href="#" class="btn btn-primary">$28.50</a>
+          </div>
+        </div>
+ 
+    &nbsp;
+      
+      
+      
+    </td>
+    <td colspan="3">
+     <h2>MARCA: Oxford
+</h2>
+        <p>Archivo Expandible con liga Tam. Cheque.</p>
+        <div class="card img-fluid" style="width:250px">
+          <img class="card-img-top" src="imagenes/folder.jpg" alt="Card image" style="width:100%">
+          <div class="card-img-overlay">
+            <h4 class="card-title">MARCA: Oxford</h4>
+            <p class="card-text">-Excelente para guardar cheques, notas, cupones, recibos etc. -Colores translucidos. -13 divisiones. -Medidas: 26 x 13.5 cm
+
+</p>
+            <a href="#" class="btn btn-primary">$102.00</a>
+          </div>
+        </div>
+    
+    
+    
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h2 align="center">Inicio </h2></td>
+    <td> <h2 align="center">Departamentos </h2></td>
+    <td> <h2 align="center">Ofertas del dia </h2></td>
+    <td> <h2 align="center">Promociones</h2> </td>
+    <td> <h2 align="center">Facturacion</h2> </td>
+    <td> <h2 align="center"> Sucursales</h2> </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"> <h1><em>Papeleria DPW2_U1_A3_LUSG</em> </h1> </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><img src="file:///G|/unadm/Nuevo_semestre_febrero_2025/Programacion_web_II/Unidad_1/DPW2_U1_A3_LUSG/LGSG_pap.png" alt="" width="250" height="250"></div></td>
+    <td colspan="2"><div align="center"> <h3>Papeleria DPW2_U1_A3_LUSG inicia operaciones en el año 2020 en la Ciudad de Cuernavaca, Morelos con la apertura de la primer papeleria por Luigui Giovanni Salmeron Gonzalez. A traves de los años adquiere un fuerte impulso, logrando un fuerte crecimiento de su principal marca. Siempre con el objetivo de atender de manera mas especializada las necesidades del mercado y distinguiendose por ofrecer la mas amplia variedad de articulos de los mejores fabricantes y siempre a los mejores precios. </h3></div></td>
+    <td colspan="2"><img src="https://cdn.prod.website-files.com/613658193a97c8752a1ed599/630af5d1b123fbafccb7be6d_shutterstock_1058131073%20(1)%20(1)%20(1).jpg" alt="Qué se necesita para poner una papelería pequeña? | Treinta" width="335" height="250"/></td>
+  </tr>
+  <tr>
+    <td rowspan="6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGb201QEkwTWsDXcX1Hqe_8W_CVad1E1TEQA&s" alt="Crear mejores wireframes y prototipos con Moqups - Tu Project Manager" width="180" height="100" jsname="JuXqh" data-ilt="1741904357392"></td>
+    <td colspan="4">&nbsp;</td>
+    <td rowspan="6"><img src="https://cdn-icons-png.flaticon.com/512/220/220200.png" alt="Facebook - Iconos gratis de redes sociales" width="51" height="50"/><img src="https://i.pinimg.com/736x/97/ef/68/97ef686d3e44cb6a4466fa895694246e.jpg" alt="Icono De Whatsapp, Whatsapp, Whatsapp Logo PNG, Icono De Whatsapp Logotipo  De Whatsapp Imágenes Vectoriales, Archivos PSD - Pngtree" width="52" height="50"/><img src="https://img.freepik.com/vector-gratis/diseno-logotipo-twitter_1035-8934.jpg?semt=ais_hybrid" alt="Imágenes de Twitter Logo - Descarga gratuita en Freepik" width="50" height="50"/><img src="https://i.pinimg.com/736x/60/ed/42/60ed4280e1aae0b95eef17766205116b.jpg" alt="Iconos gratuitos de Gmail diseñados por Freepik" width="50" height="50"/></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">422089418@derecho.unam.mx</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">7778566782 - 2202264880</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">Luigui Giovanni Salmeron Gonzalez</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center"><img src="https://cdn-icons-png.freepik.com/512/7647/7647600.png" alt="Icono de Símbolo de copyright Generic Basic Outline | Freepik" width="51" height="50"/></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
