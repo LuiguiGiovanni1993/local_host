@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Css_DPW2_U1_A3_LUSG_1.css">
+
+
+<title>Actividad 2. Documentación y maquetación de un sitio web.</title>
+</head>
+
+<body>
+<table width="1250" border="1" align="center">
+  <tr>
+    <td> <h2 align="center">Inicio </h2></td>
+    <td> <h2 align="center">Departamentos </h2></td>
+    <td> <h2 align="center">Ofertas del dia </h2></td>
+    <td> <h2 align="center">Promociones</h2> </td>
+    <td> <h2 align="center">Facturacion</h2> </td>
+    <td> <h2 align="center"> Sucursales</h2> </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"> <h1><em>Papeleria DPW2_U1_A3_LUSG</em> </h1> </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><img src="file:///G|/unadm/Nuevo_semestre_febrero_2025/Programacion_web_II/Unidad_1/DPW2_U1_A3_LUSG/LGSG_pap.png" alt="" width="250" height="250"></div></td>
+    <td colspan="2"><div align="center"> <h3>Papeleria DPW2_U1_A3_LUSG inicia operaciones en el año 2020 en la Ciudad de Cuernavaca, Morelos con la apertura de la primer papeleria por Luigui Giovanni Salmeron Gonzalez. A traves de los años adquiere un fuerte impulso, logrando un fuerte crecimiento de su principal marca. Siempre con el objetivo de atender de manera mas especializada las necesidades del mercado y distinguiendose por ofrecer la mas amplia variedad de articulos de los mejores fabricantes y siempre a los mejores precios. </h3></div></td>
+    <td colspan="2"><img src="https://cdn.prod.website-files.com/613658193a97c8752a1ed599/630af5d1b123fbafccb7be6d_shutterstock_1058131073%20(1)%20(1)%20(1).jpg" alt="Qué se necesita para poner una papelería pequeña? | Treinta" width="335" height="250"/></td>
+  </tr>
+  <tr>
+    <td rowspan="4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGb201QEkwTWsDXcX1Hqe_8W_CVad1E1TEQA&s" alt="Crear mejores wireframes y prototipos con Moqups - Tu Project Manager" width="180" height="100" jsname="JuXqh" data-ilt="1741904357392"></td>
+    <td colspan="4"><div align="center">422089418@derecho.unam.mx</div></td>
+    <td rowspan="4"><img src="https://cdn-icons-png.flaticon.com/512/220/220200.png" alt="Facebook - Iconos gratis de redes sociales" width="51" height="50"/><img src="https://i.pinimg.com/736x/97/ef/68/97ef686d3e44cb6a4466fa895694246e.jpg" alt="Icono De Whatsapp, Whatsapp, Whatsapp Logo PNG, Icono De Whatsapp Logotipo  De Whatsapp Imágenes Vectoriales, Archivos PSD - Pngtree" width="52" height="50"/><img src="https://img.freepik.com/vector-gratis/diseno-logotipo-twitter_1035-8934.jpg?semt=ais_hybrid" alt="Imágenes de Twitter Logo - Descarga gratuita en Freepik" width="50" height="50"/><img src="https://i.pinimg.com/736x/60/ed/42/60ed4280e1aae0b95eef17766205116b.jpg" alt="Iconos gratuitos de Gmail diseñados por Freepik" width="78" height="50"/></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">7778566782 - 2202264880</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">Luigui Giovanni Salmeron Gonzalez</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center"><img src="https://cdn-icons-png.freepik.com/512/7647/7647600.png" alt="Icono de Símbolo de copyright Generic Basic Outline | Freepik" width="51" height="50"/></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
