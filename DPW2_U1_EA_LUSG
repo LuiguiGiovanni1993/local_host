@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Css_DPW2_U1_A3_LUSG.css">
+
+<title>Actividad 2. Documentación y maquetación de un sitio web.</title>
+</head>
+
+<body>
+<table width="1250" border="1" align="center">
+  <tr>
+    <td><h1>Inicio </h1></td>
+    <td><h1 align="center">Departamentos</h1></td>
+    <td><h1 align="center">Ofertas del dia</h1></td>
+    <td><h1 align="center">Promociones</h1></td>
+    <td><h1 align="center">Facturacion</h1></td>
+    <td><h1 align="center">Sucursales</h1></td>
+  </tr>
+  <tr>
+    <td><h2 align="center">Papel</h2></td>
+    <td><h2 align="center">Arte</h2></td>
+    <td><h2 align="center">Oficina</h2></td>
+    <td><h2 align="center">Tecnologia</h2></td>
+    <td><h2 align="center">Regalos</h2></td>
+    <td><h2 align="center">Muebles</h2></td>
+  </tr>
+  <tr>
+    <td><p3>lugar donde se produce papel a partir de fibras vegetales  como pulpa de madera  trapos viejos o pulpa de celulosa.</p3></td>
+    <td><p3>es un equipo de profesionales que se encarga de la imagen y la comunicación de un mensaje</p3></td>
+    <td><p3>es un lugar donde se realizan actividades relacionadas con la planificación  organización  control y seguimiento de los procesos y recursos de una empresa</p3></td>
+    <td><p3>es el área de una empresa que se encarga de gestionar los recursos tecnológicos</p3></td>
+    <td><p3>es un lugar donde se pueden comprar artículos para regalar en diferentes ocasiones. </p3></td>
+    <td><p3>Los muebles indispensables en un departamento dependen del tamaño y del uso del espacio  así como de las preferencias personales de cada persona </p3></td>
+  </tr>
+  <tr>
+    <td><img src="https://nexoinmobiliario.pe/blog/wp-content/uploads/2022/05/seleccionado-papel-tapiz-departamento-nexo.jpg" alt="10 tendencias de papel tapiz para tu departamento este 2022" width="200" height="100" align="absmiddle"/></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQ020s8UXFm51BKpimgXE38HyAr_aE83wsA&s" alt="Qué es la dirección de arte y dónde formarte cómo director artístico?" width="151" height="100" align="absmiddle"/></td>
+    <td><img src="https://nexoinmobiliario.pe/blog/wp-content/uploads/2022/06/oficina-departamento-nexo.jpg" alt="7 tips para montar una oficina en departamentos pequeños" width="150" height="100" align="absmiddle"/></td>
+    <td><img src="https://media.licdn.com/dms/image/v2/C4E12AQHh7d6Pinavhg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1650116447910?e=2147483647&v=beta&t=kwLOSItEzcxGscGjTH1m8ApULbCO0H86aM4X1xNfMjQ" alt="Qué tan importante es el área de TI en las empresas?" width="200" height="100" align="absmiddle"/></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkKVPVoOdmrH6cwkAcLjm4APEpUsoZsMJ_A&s" alt="Llegó la hora de inaugurar tu nueva casa o departamento 🏡: haces una  fiesta 🎉, invitas a tus amigos y familiares, lo pasan increíble, pero...  nadie llegó con regalo 🎁 o te" width="99" height="100" align="absmiddle"/></td>
+    <td><img src="https://nexoinmobiliario.pe/blog/wp-content/uploads/2022/05/seleccionado-papel-tapiz-departamento-nexo.jpg" alt="10 tendencias de papel tapiz para tu departamento este 2022" width="200" height="100" align="absmiddle"/></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan="4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGb201QEkwTWsDXcX1Hqe_8W_CVad1E1TEQA&s" alt="Crear mejores wireframes y prototipos con Moqups - Tu Project Manager" width="180" height="100" jsname="JuXqh" data-ilt="1741904357392"></td>
+    <td colspan="4"><div align="center">422089418@derecho.unam.mx</div></td>
+    <td rowspan="4"><img src="https://cdn-icons-png.flaticon.com/512/220/220200.png" alt="Facebook - Iconos gratis de redes sociales" width="51" height="50"/><img src="https://i.pinimg.com/736x/97/ef/68/97ef686d3e44cb6a4466fa895694246e.jpg" alt="Icono De Whatsapp, Whatsapp, Whatsapp Logo PNG, Icono De Whatsapp Logotipo  De Whatsapp Imágenes Vectoriales, Archivos PSD - Pngtree" width="52" height="50"/><img src="https://img.freepik.com/vector-gratis/diseno-logotipo-twitter_1035-8934.jpg?semt=ais_hybrid" alt="Imágenes de Twitter Logo - Descarga gratuita en Freepik" width="50" height="50"/><img src="https://i.pinimg.com/736x/60/ed/42/60ed4280e1aae0b95eef17766205116b.jpg" alt="Iconos gratuitos de Gmail diseñados por Freepik" width="78" height="50"/></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">7778566782 - 2202264880</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">Luigui Giovanni Salmeron Gonzalez</div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center"><img src="https://cdn-icons-png.freepik.com/512/7647/7647600.png" alt="Icono de Símbolo de copyright Generic Basic Outline | Freepik" width="51" height="50"/></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+
