@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        
+        <?php
+       // define variables and set to empty values
+$NombreErr = $ApellidoPaternoErr = $ApellidoMaternoErr = $SexoErr = $EdadErr = $Correo_electronicoErr = $TelefonoErr = $Tipo_de_usuarioErr = $ContraseñaErr  = $Confirmacion_de_contraseñaErr = "";
+$Nombre = $ApellidoPaterno = $ApellidoMaterno = $Sexo = $Edad = $Correo_electronico = $Telefono = $Tipo_de_usuario = $Contraseña  = $Confirmacion_de_contraseña = $hash = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["Nombre"])) {
+    $NombreErr = "Nombre es requerido";
+  } else {
+    $Nombre = test_input($_POST["Nombre"]);
+  }
+  
+  if (empty($_POST["ApellidoPaterno"])) {
+    $ApellidoPaternoErr = "ApellidoPaterno es requerido";
+  } else {
+    $ApellidoPaterno = test_input($_POST["ApellidoPaterno"]);
+  }
+    
+  if (empty($_POST["ApellidoMaterno"])) {
+    $ApellidoMaternoErr = "ApellidoMaterno es requerido";
+  } else {
+    $ApellidoMaterno = test_input($_POST["ApellidoMaterno"]);
+  }
+
+  if (empty($_POST["Sexo"])) {
+    $SexoErr = "Sexo es requerido";
+  } else {
+    $Sexo = test_input($_POST["Sexo"]);
+  }
+
+  if (empty($_POST["Edad"])) {
+    $EdadErr = "Edad es requerida";
+  } else {
+    $Edad = test_input($_POST["Edad"]);
+  }
+  
+  
+  if (empty($_POST["Correo_electronico"])) {
+    $Correo_electronicoErr = "Correo_electronico es requerido";
+  } else {
+    $Correo_electronico = test_input($_POST["Correo_electronico"]);
+  }
+  
+  if (empty($_POST["Telefono"])) {
+    $TelefonoErr = "Telefono es requerido";
+  } else {
+    $Telefono = test_input($_POST["Telefono"]);
+  }
+  
+  if (empty($_POST["Tipo_de_usuario"])) {
+    $Tipo_de_usuarioErr = "Tipo_de_usuario es requerido";
+  } else {
+    $Tipo_de_usuario = test_input($_POST["Tipo_de_usuario"]);
+  }
+  
+  if (empty($_POST["Contraseña"])) {
+    $ContraseñaErr = "Contraseña es requerido";
+  } else {
+    $Contraseña = test_input($_POST["Contraseña"]);
+  }
+  
+  if (empty($_POST["Confirmacion_de_contraseña"])) {
+    $Confirmacion_de_contraseñaErr = "Confirma la contraseña";
+  } else {
+    $Confirmacion_de_contraseña = test_input($_POST["Confirmacion_de_contraseña"]);
+  }
+  
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+        
+<h2>Formulario de validacion PHP</h2>
+<p><span class="error">* Campos requeridos</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Nombre: <input type="text" name="Nombre">
+  <span class="error">* <?php echo $NombreErr;?></span>
+  <br><br>
+
+  ApellidoPaterno: <input type="text" name="ApellidoPaterno">
+  <span class="error">* <?php echo $ApellidoPaternoErr;?></span>
+  <br><br> 
+  
+  ApellidoMaterno: <input type="text" name="ApellidoMaterno">
+  <span class="error">* <?php echo $ApellidoMaternoErr;?></span>
+  <br><br> 
+  
+  Sexo: <input type="text" name="Sexo">
+  <span class="error">* <?php echo $SexoErr;?></span>
+  <br><br> 
+  
+Edad: <input type="text" name="Edad">
+  <span class="error">* <?php echo $EdadErr;?></span>
+  <br><br> 
+    
+  Correo electronico: <input type="text" name="Correo_electronico">
+  <span class="error">* <?php echo $Correo_electronicoErr;?></span>
+  <br><br>
+
+Telefono: <input type="text" name="Telefono">
+  <span class="error">* <?php echo $TelefonoErr;?></span>
+  <br><br> 
+
+Tipo de usuario: <input type="text" name="Tipo_de_usuario">
+  <span class="error">* <?php echo $Tipo_de_usuarioErr;?></span>
+  <br><br> 
+
+  Contraseña: <input type="password" name="Contraseña">
+  <span class="error">* <?php echo $ContraseñaErr;?></span>
+  <br><br> 
+  
+  Confirmacion de contraseña: <input type="password" name="Confirmacion_de_contraseña">
+  <span class="error">* <?php echo $Confirmacion_de_contraseñaErr;?></span>
+
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+  <input type="reset" value="Reset">
+</form>
+
+<?php
+echo "<h2>Tus datos de entrada:</h2>";
+echo $Nombre;
+echo "<br>";
+echo $ApellidoPaterno;
+echo "<br>";
+echo $ApellidoMaterno;
+echo "<br>";
+echo $Sexo;
+echo "<br>";
+echo $Edad;
+
+echo $Correo_electronico;
+echo "<br>";
+echo $Telefono;
+echo "<br>";
+echo $Tipo_de_usuario;
+echo "<br>";
+echo $Contraseña;
+echo "<br>";
+echo $Confirmacion_de_contraseña;
+
+//recibimos los datos del formulario
+echo "<br>";
+if ($Contraseña === $Confirmacion_de_contraseña) {
+  echo "Las contraseñas son iguales";
+} else {
+  echo "Las contraseñas son diferentes";
+}
+
+?>
+       
+     <?php
+     echo "<br>";
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Conexion fallida: " . $conn->connect_error);
+}
+echo "Conexion satisfactoria";
+
+$conn->close();
+?> 
+      
+        <?php
+        echo "<br>";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dpw2_u2_a3_lusg";
+$sql = "";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  // Establezca el modo de error PDO en excepción
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $sql = "INSERT INTO usuarios (Nombre, ApellidoPaterno, ApellidoMaterno, Edad, Sexo, Email, Telefono, TipoUsuario, Password)
+  VALUES ('$Nombre', '$ApellidoPaterno', '$ApellidoMaterno' , '$Sexo', '$Edad', '$Correo_electronico', '$Telefono', '$Tipo_de_usuario' , '$Contraseña')";
+  // Utilice exec() porque no se devuelven resultados
+  $conn->exec($sql);
+    
+  echo "Nuevo registro creado exitosamente.";
+} catch(PDOException $e) {
+  echo $sql . "<br>" . $e->getMessage();
+}
+
+$conn = null;
+?>
+
+
+    </body>
+</html>
