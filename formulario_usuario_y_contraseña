@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de usuario</title>
+    <style>
+.error {color: #FF0000;}
+</style>
+    
+    </head>
+    <body>
+<?php
+// define variables and set to empty values
+$NombreErr = $ContraseñaErr = "";
+$Nombre = $Contraseña = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["Nombre"])) {
+    $NombreErr = "Nombre es requerido";
+  } else {
+    $Nombre = test_input($_POST["Nombre"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$Nombre)) {
+      $NombreErr = "Solo se permiten letras y espacios en blanco.";
+    }
+  }
+  
+  if (empty($_POST["Contraseña"])) {
+    $ContraseñaErr = "Contraseña es requerida";
+  } else {
+    $Contraseña = test_input($_POST["Contraseña"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($Contraseña, FILTER_SANITIZE_STRING)) {
+      $ContraseñaErr = "Contraseña incorrecta";
+    }
+  }
+    
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>Inicio de sesion del usuario</h2>
+<p><span class="error">* campo requerido</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Nombre: <input type="text" name="Nombre">
+  <span class="error">* <?php echo $NombreErr;?></span>
+  <br><br>
+
+  Contraseña: <input type="text" name="Contraseña">
+  <span class="error">* <?php echo $ContraseñaErr;?></span>
+  
+  <br><br>
+  <input type="submit" name="Enviar" value="Enviar">  
+  <input type="reset" value="Limpiar">
+  
+</form>
+
+<?php
+$a_pp = "luigui";
+$a_1_pp = "12345678";
+
+$a_cp = "giovanni";
+$a_1_cp = "12345678";
+
+$url = "";
+
+
+if ($a_pp == $Nombre && $a_1_pp == $Contraseña) {
+// destroy the session
+session_destroy();
+header("Location: Usuario_PP.html");
+   
+  } else {
+    echo "";
+  }
+
+  if ($a_cp == $Nombre && $a_1_cp == $Contraseña) {
+// destroy the session
+session_destroy();
+header("Location: Usuario_CP.html");
+   
+  } else {
+echo "";      
+  }
+  
+?>
+    </body>
+</html>
